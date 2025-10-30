@@ -16,7 +16,6 @@
       <change afterPath="$PROJECT_DIR$/src/test/java/FooterTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/HomePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/l.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/l.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +77,12 @@
     "JUnit.LoginTest.testLoginPageLoads.executor": "Run",
     "JUnit.LoginTest.testLoginPageMessages.executor": "Run",
     "JUnit.LoginTest.testLoginValidEmailFlow.executor": "Run",
+    "JUnit.NavbarTest.testDropdown.executor": "Run",
+    "JUnit.NavbarTest.testDropdownOpensAndLinksClickable.executor": "Run",
+    "JUnit.NavbarTest.testMainMenuItems.executor": "Run",
+    "JUnit.NavbarTest.testMainMenuItemsAreVisible.executor": "Run",
+    "JUnit.NavbarTest.testNavLinksGoToCorrectSections.executor": "Run",
+    "JUnit.NavbarTest.testNavbarVisible.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -122,7 +127,7 @@
     "TestNG.LoginTest.testLoginValidEmailFlow.executor": "Run",
     "TestNG.LoginTest.testLoginWithInvalidCredentials.executor": "Run",
     "TestNG.LoginTest.testValidLogin.executor": "Run",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -135,52 +140,52 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.LoginTest.testLoginPageMessages">
-    <configuration name="LoginTest.testEmailInputPresence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.NavbarTest.testDropdown">
+    <configuration name="NavbarTest.testDropdown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
-      <option name="METHOD_NAME" value="testEmailInputPresence" />
+      <option name="MAIN_CLASS_NAME" value="NavbarTest" />
+      <option name="METHOD_NAME" value="testDropdown" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testLoginPageElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NavbarTest.testDropdownOpensAndLinksClickable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
-      <option name="METHOD_NAME" value="testLoginPageElements" />
+      <option name="MAIN_CLASS_NAME" value="NavbarTest" />
+      <option name="METHOD_NAME" value="testDropdownOpensAndLinksClickable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testLoginPageLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NavbarTest.testMainMenuItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
-      <option name="METHOD_NAME" value="testLoginPageLoads" />
+      <option name="MAIN_CLASS_NAME" value="NavbarTest" />
+      <option name="METHOD_NAME" value="testMainMenuItems" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testLoginPageMessages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NavbarTest.testNavbar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
-      <option name="METHOD_NAME" value="testLoginPageMessages" />
+      <option name="MAIN_CLASS_NAME" value="NavbarTest" />
+      <option name="METHOD_NAME" value="testNavbar" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testLoginValidEmailFlow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="kNavbarTest.testNavbarVisible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
-      <option name="METHOD_NAME" value="testLoginValidEmailFlow" />
+      <option name="MAIN_CLASS_NAME" value="kNavbarTest" />
+      <option name="METHOD_NAME" value="testNavbarVisible" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -188,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginTest.testLoginPageMessages" />
-        <item itemvalue="JUnit.LoginTest.testLoginPageElements" />
-        <item itemvalue="JUnit.LoginTest.testLoginValidEmailFlow" />
-        <item itemvalue="JUnit.LoginTest.testLoginPageLoads" />
-        <item itemvalue="JUnit.LoginTest.testEmailInputPresence" />
+        <item itemvalue="JUnit.NavbarTest.testDropdown" />
+        <item itemvalue="JUnit.NavbarTest.testMainMenuItems" />
+        <item itemvalue="JUnit.NavbarTest.testNavbar" />
+        <item itemvalue="JUnit.kNavbarTest.testNavbarVisible" />
+        <item itemvalue="JUnit.NavbarTest.testDropdownOpensAndLinksClickable" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +218,7 @@
       <updated>1761503467802</updated>
       <workItem from="1761503470462" duration="10121000" />
       <workItem from="1761584559043" duration="10046000" />
-      <workItem from="1761852926201" duration="2220000" />
+      <workItem from="1761852926201" duration="6271000" />
     </task>
     <servers />
   </component>

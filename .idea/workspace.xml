@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53c77117-92eb-42b3-af31-5363d0d5ef78" name="Changes" comment="" />
+    <list default="true" id="53c77117-92eb-42b3-af31-5363d0d5ef78" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FooterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/l.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/l.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +30,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "jasminades"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jasminades/selenium-testing-everlast.com.git",
+    "accountId": "8d3a7132-f9d7-4d34-9262-f6f3c12e1447"
+  }
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -31,14 +59,37 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.FooterTest.testCopyright.executor": "Run",
+    "JUnit.FooterTest.testFooterLinks.executor": "Run",
+    "JUnit.FooterTest.testNewsletter.executor": "Run",
+    "JUnit.FooterTest.testPaymentIcon.executor": "Run",
+    "JUnit.FooterTest.testSocialIcons.executor": "Run",
+    "JUnit.HomePageTest.executor": "Run",
+    "JUnit.HomePageTest.testHeaderIcons.executor": "Run",
+    "JUnit.HomePageTest.testHomePageLoads.executor": "Run",
+    "JUnit.HomePageTest.testLogoDisplay.executor": "Run",
+    "JUnit.HomePageTest.testNavigationLinks.executor": "Run",
+    "JUnit.HomePageTest.testPageLoadTime.executor": "Run",
+    "JUnit.HomePageTest.testPageTitle.executor": "Run",
+    "JUnit.HomePageTest.testSearchModal.executor": "Run",
+    "JUnit.HomePageTest.testTredingArticles.executor": "Debug",
+    "JUnit.LoginTest.testEmailInputPresence.executor": "Run",
+    "JUnit.LoginTest.testLoginPageElements.executor": "Run",
+    "JUnit.LoginTest.testLoginPageLoads.executor": "Run",
+    "JUnit.LoginTest.testLoginPageMessages.executor": "Run",
+    "JUnit.LoginTest.testLoginValidEmailFlow.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.FooterTest.testCopyright.executor": "Run",
     "TestNG.FooterTest.testFooterCopyright.executor": "Run",
     "TestNG.FooterTest.testFooterLinks (1).executor": "Run",
     "TestNG.FooterTest.testFooterLinks.executor": "Run",
     "TestNG.FooterTest.testNewsletter.executor": "Run",
     "TestNG.FooterTest.testNewsletterForm.executor": "Run",
+    "TestNG.FooterTest.testPaymentIcon.executor": "Run",
     "TestNG.FooterTest.testPaymentIcons.executor": "Run",
     "TestNG.FooterTest.testSocialIcons (1).executor": "Run",
     "TestNG.FooterTest.testSocialIcons.executor": "Run",
@@ -61,6 +112,17 @@
     "TestNG.HomePageTest.testSocialMediaLinks.executor": "Run",
     "TestNG.HomePageTest.testTredingArticles.executor": "Run",
     "TestNG.HomePageTest.ttestSearchModal.executor": "Run",
+    "TestNG.LoginTest.testEmailInputPresence.executor": "Run",
+    "TestNG.LoginTest.testEmptyLogin.executor": "Run",
+    "TestNG.LoginTest.testLoginEmptyEmail.executor": "Run",
+    "TestNG.LoginTest.testLoginInvalidEmail.executor": "Run",
+    "TestNG.LoginTest.testLoginPageElements.executor": "Run",
+    "TestNG.LoginTest.testLoginPageLoads.executor": "Run",
+    "TestNG.LoginTest.testLoginPageMessages.executor": "Run",
+    "TestNG.LoginTest.testLoginValidEmailFlow.executor": "Run",
+    "TestNG.LoginTest.testLoginWithInvalidCredentials.executor": "Run",
+    "TestNG.LoginTest.testValidLogin.executor": "Run",
+    "git-widget-placeholder": "Merging main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -73,74 +135,64 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.FooterTest.testCopyright">
-    <configuration name="FooterTest.testCopyright" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LoginTest.testLoginPageMessages">
+    <configuration name="LoginTest.testEmailInputPresence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FooterTest" />
-      <option name="METHOD_NAME" value="testCopyright" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="METHOD_NAME" value="testEmailInputPresence" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FooterTest.testFooterLinks (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.testLoginPageElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FooterTest" />
-      <option name="METHOD_NAME" value="testFooterLinks" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="METHOD_NAME" value="testLoginPageElements" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FooterTest.testNewsletter" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.testLoginPageLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FooterTest" />
-      <option name="METHOD_NAME" value="testNewsletter" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="METHOD_NAME" value="testLoginPageLoads" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FooterTest.testPaymentIcon" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.testLoginPageMessages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FooterTest" />
-      <option name="METHOD_NAME" value="testPaymentIcon" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="METHOD_NAME" value="testLoginPageMessages" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FooterTest.testSocialIcons (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.testLoginValidEmailFlow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FooterTest" />
-      <option name="METHOD_NAME" value="testSocialIcons" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="METHOD_NAME" value="testLoginValidEmailFlow" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FooterTest.testCopyright" />
-        <item itemvalue="TestNG.FooterTest.testPaymentIcon" />
-        <item itemvalue="TestNG.FooterTest.testNewsletter" />
-        <item itemvalue="TestNG.FooterTest.testSocialIcons (1)" />
-        <item itemvalue="TestNG.FooterTest.testFooterLinks (1)" />
+        <item itemvalue="JUnit.LoginTest.testLoginPageMessages" />
+        <item itemvalue="JUnit.LoginTest.testLoginPageElements" />
+        <item itemvalue="JUnit.LoginTest.testLoginValidEmailFlow" />
+        <item itemvalue="JUnit.LoginTest.testLoginPageLoads" />
+        <item itemvalue="JUnit.LoginTest.testEmailInputPresence" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +212,8 @@
       <option name="presentableId" value="Default" />
       <updated>1761503467802</updated>
       <workItem from="1761503470462" duration="10121000" />
-      <workItem from="1761584559043" duration="7237000" />
+      <workItem from="1761584559043" duration="10046000" />
+      <workItem from="1761852926201" duration="2220000" />
     </task>
     <servers />
   </component>

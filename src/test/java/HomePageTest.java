@@ -2,8 +2,10 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 
 import java.time.Duration;
 import java.util.List;
@@ -16,7 +18,7 @@ public class HomePageTest extends BaseTest {
 
         String title = driver.getTitle();
         System.out.println("Page title " + title);
-        Assert.assertTrue(title.toLowerCase().contains("everlast"), "Title should contain 'Everlast'");
+        assertTrue(title.toLowerCase().contains("everlast"), "Title should contain 'Everlast'");
     }
 
     @Test
@@ -27,7 +29,7 @@ public class HomePageTest extends BaseTest {
         wait.until(driver -> !driver.getTitle().isEmpty());
 
         String actualTitle = driver.getTitle();
-        Assert.assertEquals(actualTitle, expectedTitle, "Page title does not match");
+        assertEquals(actualTitle, expectedTitle, "Page title does not match");
     }
 
     @Test
@@ -35,7 +37,7 @@ public class HomePageTest extends BaseTest {
         driver.get(websiteUrl);
 
         WebElement logo = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("img[alt='Everlast Logo']")));
-        Assert.assertTrue(logo.isDisplayed());
+        assertTrue(logo.isDisplayed());
     }
 
     @Test
@@ -46,9 +48,9 @@ public class HomePageTest extends BaseTest {
         for (String linkText : navLinks) {
             try {
                 WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText(linkText)));
-                Assert.assertTrue(link.isDisplayed(), linkText + " link is not visible.");
+                assertTrue(link.isDisplayed(), linkText + " link is not visible.");
             } catch (TimeoutException e) {
-                Assert.fail("Could not find link: " + linkText);
+                fail("Could not find link: " + linkText);
             }
         }
     }
@@ -58,7 +60,7 @@ public class HomePageTest extends BaseTest {
         driver.get(websiteUrl);
         long start = System.currentTimeMillis();
         long loadTime = System.currentTimeMillis() - start;
-        Assert.assertTrue(loadTime < 5000, "Page loads for too long: " + loadTime + " ms");
+        assertTrue(loadTime < 5000, "Page loads for too long: " + loadTime + " ms");
     }
 
     @Test
@@ -82,7 +84,7 @@ public class HomePageTest extends BaseTest {
                 By.cssSelector("div#ProductGridContainer, .search__results")));
 
         String pageSource = driver.getPageSource().toLowerCase();
-        Assert.assertTrue(pageSource.contains("glove"), "Search results page does not contain 'gloves'");
+        assertTrue(pageSource.contains("glove"), "Search results page does not contain 'gloves'");
     }
 
     @Test
@@ -95,16 +97,16 @@ public class HomePageTest extends BaseTest {
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", searchIcon);
 
-        Assert.assertTrue(searchIcon.isDisplayed(), "Search icon not visible.");
-        Assert.assertTrue(accountIcon.isDisplayed(), "Account icon not visible.");
-        Assert.assertTrue(cartIcon.isDisplayed(), "Cart icon not visible.");
+        assertTrue(searchIcon.isDisplayed(), "Search icon not visible.");
+        assertTrue(accountIcon.isDisplayed(), "Account icon not visible.");
+        assertTrue(cartIcon.isDisplayed(), "Cart icon not visible.");
     }
 
     @Test
-    public void testTredingArticles() {
+    public void testTrendingArticles() {
         driver.get(websiteUrl);
         WebElement trendingHeading = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.xpath("//h2[contains(text(), 'TRENDING NOW')]")));
-        Assert.assertTrue(trendingHeading.isDisplayed(), "Trending heading not visible.");
+        assertTrue(trendingHeading.isDisplayed(), "Trending heading not visible.");
     }
 }

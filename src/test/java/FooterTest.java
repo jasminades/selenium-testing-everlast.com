@@ -1,11 +1,8 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.openqa.selenium.WebElement;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 import java.time.Duration;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -20,7 +17,7 @@ public class FooterTest extends BaseTest {
                 "div.footer__desktop-links-wrapper ul.footer_menu-ul li a"));
         for (WebElement link : footerLinks) {
             String url = link.getAttribute("href");
-            Assert.assertNotNull(url, "Link href should not be null");
+            assertNotNull(url, "Link href should not be null");
         }
     }
 
@@ -36,10 +33,10 @@ public class FooterTest extends BaseTest {
         );
         List<WebElement> socialLinks = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(socialLinksSelector));
 
-        Assert.assertTrue(socialLinks.size() > 0, "No social icons found");
+        assertTrue(socialLinks.size() > 0, "No social icons found");
 
         for(WebElement link : socialLinks) {
-            Assert.assertNotNull(link.getAttribute("href"));
+            assertNotNull(link.getAttribute("href"));
         }
     }
 
@@ -79,10 +76,10 @@ public class FooterTest extends BaseTest {
     public void testPaymentIcon() {
         driver.get(websiteUrl);
         List<WebElement> paymentIcon = driver.findElements(By.cssSelector("ul.footer__payment-ul li"));
-        Assert.assertTrue(paymentIcon.size() > 0, "Payment icon visible");
+        assertTrue(paymentIcon.size() > 0, "Payment icon visible");
 
         for(WebElement icon : paymentIcon) {
-            Assert.assertTrue(icon.isDisplayed(), "Payment icon displayed");
+            assertTrue(icon.isDisplayed(), "Payment icon displayed");
         }
     }
 
@@ -91,6 +88,6 @@ public class FooterTest extends BaseTest {
         driver.get(websiteUrl);
         WebElement footerText = driver.findElement(By.cssSelector("div.footer_copyright-text-wrapper p"));
         String expectedText = "© 2025 EVERLAST WORLDWIDE INC.";
-        Assert.assertEquals(footerText.getText(), expectedText, "Text should match");
+        assertEquals(footerText.getText(), expectedText, "Text should match");
     }
 }

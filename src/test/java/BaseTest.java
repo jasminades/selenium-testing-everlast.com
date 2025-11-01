@@ -15,7 +15,7 @@ import java.time.Duration;
 
 public class BaseTest {
     protected static WebDriver driver;
-    protected static final String websiteUrl = "https://www.everlast.com/eu/";
+    protected static final String websiteUrl = "https://www.ekupi.ba";
 
     protected WebDriverWait wait;
     protected Actions actions;

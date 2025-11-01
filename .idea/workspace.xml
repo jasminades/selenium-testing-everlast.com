@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53c77117-92eb-42b3-af31-5363d0d5ef78" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FooterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HomePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FooterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FooterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,18 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jasminades"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jasminades&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jasminades/selenium-testing-everlast.com.git",
-    "accountId": "8d3a7132-f9d7-4d34-9262-f6f3c12e1447"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jasminades/selenium-testing-everlast.com.git&quot;,
+    &quot;accountId&quot;: &quot;8d3a7132-f9d7-4d34-9262-f6f3c12e1447&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -73,16 +66,26 @@
     "JUnit.HomePageTest.testSearchModal.executor": "Run",
     "JUnit.HomePageTest.testTredingArticles.executor": "Debug",
     "JUnit.LoginTest.testEmailInputPresence.executor": "Run",
+    "JUnit.LoginTest.testEmptyEmail.executor": "Run",
+    "JUnit.LoginTest.testEmptyPassword.executor": "Run",
+    "JUnit.LoginTest.testForgotPasswordLink.executor": "Run",
+    "JUnit.LoginTest.testInvalidPassword.executor": "Run",
     "JUnit.LoginTest.testLoginPageElements.executor": "Run",
     "JUnit.LoginTest.testLoginPageLoads.executor": "Run",
     "JUnit.LoginTest.testLoginPageMessages.executor": "Run",
     "JUnit.LoginTest.testLoginValidEmailFlow.executor": "Run",
+    "JUnit.LoginTest.testValidLogin.executor": "Run",
     "JUnit.NavbarTest.testDropdown.executor": "Run",
     "JUnit.NavbarTest.testDropdownOpensAndLinksClickable.executor": "Run",
     "JUnit.NavbarTest.testMainMenuItems.executor": "Run",
     "JUnit.NavbarTest.testMainMenuItemsAreVisible.executor": "Run",
     "JUnit.NavbarTest.testNavLinksGoToCorrectSections.executor": "Run",
+    "JUnit.NavbarTest.testNavbar.executor": "Run",
     "JUnit.NavbarTest.testNavbarVisible.executor": "Run",
+    "JUnit.ProfileTest.executor": "Run",
+    "JUnit.ProfileTest.testProfileHeader.executor": "Run",
+    "JUnit.ProfileTest.testProfilePageAccessible.executor": "Run",
+    "JUnit.kNavbarTest.testNavbarVisible.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -140,52 +143,52 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.NavbarTest.testDropdown">
-    <configuration name="NavbarTest.testDropdown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LoginTest.testEmptyPassword">
+    <configuration name="LoginTest.testEmptyEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NavbarTest" />
-      <option name="METHOD_NAME" value="testDropdown" />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="METHOD_NAME" value="testEmptyEmail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NavbarTest.testDropdownOpensAndLinksClickable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.testEmptyPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NavbarTest" />
-      <option name="METHOD_NAME" value="testDropdownOpensAndLinksClickable" />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="METHOD_NAME" value="testEmptyPassword" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NavbarTest.testMainMenuItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.testForgotPasswordLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NavbarTest" />
-      <option name="METHOD_NAME" value="testMainMenuItems" />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="METHOD_NAME" value="testForgotPasswordLink" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NavbarTest.testNavbar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.testInvalidPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NavbarTest" />
-      <option name="METHOD_NAME" value="testNavbar" />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="METHOD_NAME" value="testInvalidPassword" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="kNavbarTest.testNavbarVisible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.testValidLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="kNavbarTest" />
-      <option name="METHOD_NAME" value="testNavbarVisible" />
+      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="METHOD_NAME" value="testValidLogin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NavbarTest.testDropdown" />
-        <item itemvalue="JUnit.NavbarTest.testMainMenuItems" />
-        <item itemvalue="JUnit.NavbarTest.testNavbar" />
-        <item itemvalue="JUnit.kNavbarTest.testNavbarVisible" />
-        <item itemvalue="JUnit.NavbarTest.testDropdownOpensAndLinksClickable" />
+        <item itemvalue="JUnit.LoginTest.testEmptyPassword" />
+        <item itemvalue="JUnit.LoginTest.testEmptyEmail" />
+        <item itemvalue="JUnit.LoginTest.testInvalidPassword" />
+        <item itemvalue="JUnit.LoginTest.testValidLogin" />
+        <item itemvalue="JUnit.LoginTest.testForgotPasswordLink" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +221,8 @@
       <updated>1761503467802</updated>
       <workItem from="1761503470462" duration="10121000" />
       <workItem from="1761584559043" duration="10046000" />
-      <workItem from="1761852926201" duration="6271000" />
+      <workItem from="1761852926201" duration="6971000" />
+      <workItem from="1761929759650" duration="5940000" />
     </task>
     <servers />
   </component>

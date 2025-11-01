@@ -1,70 +1,101 @@
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-
-import javax.swing.*;
 import java.time.Duration;
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class LoginTest extends BaseTest {
+    private WebDriver driver;
+    private WebDriverWait wait;
 
-    @Test
-    public void testLoginPageLoads() {
-        driver.get(websiteUrl + "/account/login");
-        WebElement loginHeader = new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("h2")));
-        assertEquals(loginHeader.getText(), "Sign in", "Login page header should be 'Sign in'");
+    @BeforeEach
+    public void setUp() {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.ekupi.ba/bs/login");
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     @Test
-    public void testLoginValidEmailFlow() {
-        driver.get(websiteUrl + "/account/login");
+    public void testValidLogin() throws InterruptedException {
+        driver.findElement(By.id("j_username")).sendKeys("jasmina.destanovic1@gmail.com");
+        driver.findElement(By.id("j_password")).sendKeys("password");
+        driver.findElement(By.id("submit")).click();
 
-        WebElement emailInput = driver.findElement(By.id("email"));
-        WebElement continueButton = driver.findElement(By.cssSelector("button[type='submit']"));
-
-        emailInput.clear();
-        emailInput.sendKeys("testuser@mail.com");
-        continueButton.click();
-
-        WebElement checkEmailMsg = new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.cssSelector("#customer-account-description-visuallyhidden")));
-        assertTrue(checkEmailMsg.getText().toLowerCase().contains("verification code"),
-                "Expected 'check your email' message");
+        Thread.sleep(2000);
+        String currentUrl = driver.getCurrentUrl();
+        assertTrue(currentUrl.contains("/bs/"), "User should be redirected after login");
     }
 
     @Test
-    public void testLoginPageElements() {
-        driver.get(websiteUrl + "/account/login");
+    public void testInvalidPassword() throws InterruptedException {
+        driver.findElement(By.id("j_username")).sendKeys("jasmina.destanovic1@gmail.com");
+        driver.findElement(By.id("j_password")).sendKeys("wrong-password");
+        driver.findElement(By.id("submit")).click();
 
-        WebElement emailInput = driver.findElement(By.id("email"));
-        WebElement continueButton = driver.findElement(By.cssSelector("button[type='submit']"));
+        Thread.sleep(2000);
+        WebElement error = driver.findElement(By.cssSelector(".alert-danger"));
+        assertTrue(error.isDisplayed(), "Error message should be displayed");
 
-        assertTrue(emailInput.isDisplayed(), "Email input field should be visible");
-
-        assertTrue(continueButton.isDisplayed(), "Continue button should be visible");
-        assertTrue(continueButton.getAttribute("disabled") != null,
-                "Continue button should be disabled before captcha");
     }
 
     @Test
-    public void testLoginPageMessages() {
-        driver.get(websiteUrl + "/account/login");
+    public void testEmptyEmail() {
+        driver.findElement(By.id("j_password")).sendKeys("wrong-password");
+        driver.findElement(By.id("submit")).click();
 
-        WebElement description = driver.findElement(By.id("customer-account-description"));
-        WebElement visuallyHiddenDescription = driver.findElement(By.id("customer-account-description-visuallyhidden"));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebElement alert = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.cssSelector("div.alert.alert-danger.getAccAlert")
+        ));
 
-        assertTrue(description.isDisplayed(), "Login description should be visible.");
-        assertTrue(description.getText().contains("Choose how you'd like to sign in"),
-                "Description text is correct");
+        String expectedMessage = "Email adresa ili lozinka su neispravni.";
+        assertTrue(alert.isDisplayed(), "Error alert should be displayed");
+        assertTrue(alert.getText().contains(expectedMessage), "Alert message should match expected text");
+    }
 
-        assertTrue(visuallyHiddenDescription.isDisplayed(), "Visually hidden description should be present");
-        assertTrue(visuallyHiddenDescription.getText().contains("Enter your email"),
-                "Hidden description text is correct");
+    @Test
+    public void testEmptyPassword() {
+        WebElement emailField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("j_username")));
+        emailField.clear();
+        emailField.sendKeys("jasmina.destanovic1@gmail.com");
+
+        WebElement passwordField = driver.findElement(By.id("j_password"));
+        passwordField.clear();
+
+        WebElement submitButton = driver.findElement(By.id("submit"));
+        submitButton.click();
+
+        WebElement alert = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.cssSelector("div.alert.alert-danger.getAccAlert")
+        ));
+
+        String expectedMessage = "Email adresa ili lozinka su neispravni.";
+        assertTrue(alert.isDisplayed(), "Error alert should be displayed");
+        assertTrue(alert.getText().contains(expectedMessage), "Alert message should match expected text");
+    }
+
+    @Test
+    public void testForgotPasswordLink() {
+        WebElement forgotLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(".js-password-forgotten")));
+        assertTrue(forgotLink.isDisplayed(), "Forgotten password link should be displayed");
+
+        forgotLink.click();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebElement modal = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.cssSelector("#cboxLoadedContent")
+        ));
+
+        assertTrue(modal.isDisplayed(), "Forgotten password modal should be displayed");
     }
 }

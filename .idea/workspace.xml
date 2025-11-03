@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="53c77117-92eb-42b3-af31-5363d0d5ef78" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FooterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FooterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/FooterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/HomePageTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +85,12 @@
     "JUnit.ProfileTest.executor": "Run",
     "JUnit.ProfileTest.testProfileHeader.executor": "Run",
     "JUnit.ProfileTest.testProfilePageAccessible.executor": "Run",
+    "JUnit.RegistrationTest.testEmptyFieldsValidation.executor": "Run",
+    "JUnit.RegistrationTest.testEmptyForm.executor": "Run",
+    "JUnit.RegistrationTest.testEmptyRegistrationFormShowsValidation.executor": "Run",
+    "JUnit.RegistrationTest.testMismatchedPasswords.executor": "Run",
+    "JUnit.RegistrationTest.testSuccessfulRegistration.executor": "Run",
+    "JUnit.RegistrationTest.testSuccessfulRegistrationFormFilling.executor": "Run",
     "JUnit.kNavbarTest.testNavbarVisible.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -143,52 +149,52 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.LoginTest.testEmptyPassword">
-    <configuration name="LoginTest.testEmptyEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RegistrationTest.testEmptyForm">
+    <configuration name="RegistrationTest.testEmptyFieldsValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
-      <option name="METHOD_NAME" value="testEmptyEmail" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTest" />
+      <option name="METHOD_NAME" value="testEmptyFieldsValidation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testEmptyPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegistrationTest.testEmptyForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
-      <option name="METHOD_NAME" value="testEmptyPassword" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTest" />
+      <option name="METHOD_NAME" value="testEmptyForm" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testForgotPasswordLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegistrationTest.testEmptyRegistrationFormShowsValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
-      <option name="METHOD_NAME" value="testForgotPasswordLink" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTest" />
+      <option name="METHOD_NAME" value="testEmptyRegistrationFormShowsValidation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testInvalidPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegistrationTest.testMismatchedPasswords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
-      <option name="METHOD_NAME" value="testInvalidPassword" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTest" />
+      <option name="METHOD_NAME" value="testMismatchedPasswords" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testValidLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegistrationTest.testSuccessfulRegistration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="everlast-selenium-project" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
-      <option name="METHOD_NAME" value="testValidLogin" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTest" />
+      <option name="METHOD_NAME" value="testSuccessfulRegistration" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -196,11 +202,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginTest.testEmptyPassword" />
-        <item itemvalue="JUnit.LoginTest.testEmptyEmail" />
-        <item itemvalue="JUnit.LoginTest.testInvalidPassword" />
-        <item itemvalue="JUnit.LoginTest.testValidLogin" />
-        <item itemvalue="JUnit.LoginTest.testForgotPasswordLink" />
+        <item itemvalue="JUnit.RegistrationTest.testEmptyForm" />
+        <item itemvalue="JUnit.RegistrationTest.testEmptyRegistrationFormShowsValidation" />
+        <item itemvalue="JUnit.RegistrationTest.testEmptyFieldsValidation" />
+        <item itemvalue="JUnit.RegistrationTest.testSuccessfulRegistration" />
+        <item itemvalue="JUnit.RegistrationTest.testMismatchedPasswords" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +228,8 @@
       <workItem from="1761503470462" duration="10121000" />
       <workItem from="1761584559043" duration="10046000" />
       <workItem from="1761852926201" duration="6971000" />
-      <workItem from="1761929759650" duration="5940000" />
+      <workItem from="1761929759650" duration="11200000" />
+      <workItem from="1762156405703" duration="561000" />
     </task>
     <servers />
   </component>

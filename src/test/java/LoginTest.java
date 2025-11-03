@@ -7,10 +7,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import java.time.Duration;
-import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 public class LoginTest extends BaseTest {
     private WebDriver driver;

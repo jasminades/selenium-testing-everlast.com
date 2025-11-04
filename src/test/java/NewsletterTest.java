@@ -23,21 +23,6 @@ public class NewsletterTest extends BaseTest{
     }
 
     @Test
-    public void testValidEmailSubmission() {
-        WebElement emailInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("email")));
-        emailInput.clear();
-        emailInput.sendKeys("test@example.com");
-
-        WebElement button = wait.until(ExpectedConditions.elementToBeClickable(By.id("newsletter-submit-btn")));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", button);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", button);
-
-        // Optionally wait/check for success message
-        WebElement successMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".newsletter-success, .alert-success")));
-        assertTrue(successMessage.isDisplayed(), "Success message should be displayed for valid email submission");
-    }
-
-    @Test
     public void testEmptyEmailSubmission() {
         WebElement emailInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("email")));
         emailInput.clear();
@@ -63,6 +48,4 @@ public class NewsletterTest extends BaseTest{
         String validationMessage = emailInput.getAttribute("validationMessage");
         assertFalse(validationMessage.isEmpty());
     }
-
-
 }

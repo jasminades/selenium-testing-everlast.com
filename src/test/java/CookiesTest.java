@@ -28,19 +28,16 @@ public class CookiesTest extends BaseTest{
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", updateButton);
         updateButton.click();
 
-        // wait a bit for any animation/JS
         try { Thread.sleep(500); } catch (InterruptedException e) {}
 
-        // check that the notification is either invisible or manually hide it
         ((JavascriptExecutor) driver).executeScript(
                 "document.getElementById('js-cookie-notification').style.display='none';"
         );
 
         boolean isNotificationGone = driver.findElement(By.id("js-cookie-notification"))
                 .getCssValue("display").equals("none");
-        assertTrue(isNotificationGone, "Cookie notification should disappear after updating settings");
+        assertTrue(isNotificationGone);
     }
-
 
     @Test
     public void testLinksExistInNotification() {

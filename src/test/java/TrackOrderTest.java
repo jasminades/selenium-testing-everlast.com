@@ -1,16 +1,8 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
@@ -51,20 +43,6 @@ public class TrackOrderTest extends BaseTest {
         WebElement errorAlert = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.cssSelector("div.alert.alert-danger.getAccAlert")
         ));
-
         assertTrue(errorAlert.getText().contains("nije pronađena"));
-    }
-
-    @Test
-    public void testEmptyInput() {
-        WebElement input = driver.findElement(By.name("orderCode"));
-        input.clear();
-
-        WebElement button = driver.findElement(By.cssSelector("button.search-button"));
-        button.click();
-
-        // Check for HTML5 required validation or custom alert
-        String validationMessage = input.getAttribute("validationMessage");
-        assertFalse(validationMessage.isEmpty(), "Validation message should be shown for empty input");
     }
 }

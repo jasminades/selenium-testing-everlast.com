@@ -32,6 +32,8 @@ public class BaseTest {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         actions = new Actions(driver);
 
+        driver.get(websiteUrl);
+
     }
 
     @AfterEach

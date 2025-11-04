@@ -187,7 +187,7 @@ public class NavbarTest extends BaseTest{
         String href = link.getAttribute("href");
         assertTrue(href.endsWith("/bs/supermarket/c/10011"));
     }
-    
+
     @Test
     public void testPromocije() {
         WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(

@@ -68,5 +68,4 @@ public class SearchTest extends BaseTest {
         assertTrue(noResultsMsg.isDisplayed());
     }
 }
-{
-}
+

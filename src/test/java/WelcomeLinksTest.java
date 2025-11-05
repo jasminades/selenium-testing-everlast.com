@@ -49,5 +49,4 @@ public class WelcomeLinksTest extends BaseTest{
         assertTrue(benefitsLink.isDisplayed());
         assertTrue(benefitsLink.getAttribute("onclick").contains("/eKupi-Benefiti"));
     }
-
 }

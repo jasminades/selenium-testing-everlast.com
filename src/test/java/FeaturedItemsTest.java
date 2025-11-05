@@ -18,7 +18,7 @@ public class FeaturedItemsTest extends BaseTest {
     public void testImagesAreDisplayed() {
         List<WebElement> images = driver.findElements(By.cssSelector(".grid-container img"));
         for (WebElement img : images) {
-            Assertions.assertTrue(img.isDisplayed(), "Image should be visible: " + img.getAttribute("alt"));
+            Assertions.assertTrue(img.isDisplayed());
         }
     }
 
@@ -37,9 +37,8 @@ public class FeaturedItemsTest extends BaseTest {
     public void testImagesAreClickable() {
         List<WebElement> links = driver.findElements(By.cssSelector(".grid-container a"));
         for (WebElement link : links) {
-            Assertions.assertTrue(link.isDisplayed(), "Link should be visible: " + link.getAttribute("href"));
-            Assertions.assertTrue(link.isEnabled(), "Link should be clickable: " + link.getAttribute("href"));
+            Assertions.assertTrue(link.isDisplayed());
+            Assertions.assertTrue(link.isEnabled());
         }
     }
-
 }

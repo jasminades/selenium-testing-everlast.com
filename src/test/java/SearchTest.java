@@ -50,9 +50,24 @@ public class SearchTest extends BaseTest {
         assertTrue(autocompleteList.isDisplayed());
     }
 
+    @Test
+    public void testValidProduct() {
+        WebElement searchInput = driver.findElement(By.id("js-site-search-input"));
+        WebElement searchButton = driver.findElement(By.cssSelector("button.js_search_button"));
+
+        searchInput.sendKeys("mobitel");
+        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.elementToBeClickable(searchButton));
+        searchButton.click();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement noResultsMsg = wait.until(ExpectedConditions.presenceOfElementLocated(
+                By.cssSelector(".no-results, .alert-info, .product__no-results")));
+        assertTrue(noResultsMsg.isDisplayed());
+    }
+
 
     @Test
-    public void testNoResultsMessage() {
+    public void testInvalidProduct() {
         WebElement searchInput = driver.findElement(By.id("js-site-search-input"));
         WebElement searchButton = driver.findElement(By.cssSelector("button.js_search_button"));
 

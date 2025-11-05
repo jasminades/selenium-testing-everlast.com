@@ -178,7 +178,4 @@ public class ProfileTest extends BaseTest {
         Assertions.assertTrue(button.isDisplayed());
         Assertions.assertEquals("UGASITE PROFIL", button.getText().trim());
     }
-
-
-
 }

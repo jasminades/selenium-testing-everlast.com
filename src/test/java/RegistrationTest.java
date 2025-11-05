@@ -63,7 +63,6 @@ public class RegistrationTest extends BaseTest {
         }
     }
 
-
     @Test
     public void testMismatchedPasswords() {
         new Select(driver.findElement(By.id("register.title"))).selectByValue("g");

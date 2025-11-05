@@ -4,7 +4,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class NavbarTest extends BaseTest{
@@ -85,7 +84,6 @@ public class NavbarTest extends BaseTest{
         WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.linkText("Elektronika")
         ));
-
         assertTrue(link.isDisplayed());
 
         String href = link.getAttribute("href");
@@ -97,7 +95,6 @@ public class NavbarTest extends BaseTest{
         WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.linkText("Gaming")
         ));
-
         assertTrue(link.isDisplayed());
 
         String href = link.getAttribute("href");
@@ -109,7 +106,6 @@ public class NavbarTest extends BaseTest{
         WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.linkText("Dom i vrt")
         ));
-
         assertTrue(link.isDisplayed());
 
         String href = link.getAttribute("href");
@@ -121,7 +117,6 @@ public class NavbarTest extends BaseTest{
         WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.linkText("Alati i mašine")
         ));
-
         assertTrue(link.isDisplayed());
 
         String href = link.getAttribute("href");
@@ -133,7 +128,6 @@ public class NavbarTest extends BaseTest{
         WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.linkText("Auto i moto oprema")
         ));
-
         assertTrue(link.isDisplayed());
 
         String href = link.getAttribute("href");
@@ -145,7 +139,6 @@ public class NavbarTest extends BaseTest{
         WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.linkText("Fitness")
         ));
-
         assertTrue(link.isDisplayed());
 
         String href = link.getAttribute("href");
@@ -157,7 +150,6 @@ public class NavbarTest extends BaseTest{
         WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.linkText("E-mobility")
         ));
-
         assertTrue(link.isDisplayed());
 
         String href = link.getAttribute("href");
@@ -169,7 +161,6 @@ public class NavbarTest extends BaseTest{
         WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.linkText("Igračke i dječja oprema")
         ));
-
         assertTrue(link.isDisplayed());
 
         String href = link.getAttribute("href");
@@ -181,7 +172,6 @@ public class NavbarTest extends BaseTest{
         WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.linkText("Supermarket")
         ));
-
         assertTrue(link.isDisplayed());
 
         String href = link.getAttribute("href");
@@ -193,7 +183,6 @@ public class NavbarTest extends BaseTest{
         WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.linkText("Promocije")
         ));
-
         assertTrue(link.isDisplayed());
 
         String href = link.getAttribute("href");
@@ -205,7 +194,6 @@ public class NavbarTest extends BaseTest{
         WebElement link = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.linkText("Kupkov Outlet")
         ));
-
         assertTrue(link.isDisplayed());
 
         String href = link.getAttribute("href");

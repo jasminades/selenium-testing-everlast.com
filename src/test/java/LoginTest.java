@@ -29,7 +29,7 @@ public class LoginTest extends BaseTest {
 
         Thread.sleep(2000);
         String currentUrl = driver.getCurrentUrl();
-        assertTrue(currentUrl.contains("/bs/"), "User should be redirected after login");
+        assertTrue(currentUrl.contains("/bs/"));
     }
 
     @Test
@@ -40,7 +40,7 @@ public class LoginTest extends BaseTest {
 
         Thread.sleep(2000);
         WebElement error = driver.findElement(By.cssSelector(".alert-danger"));
-        assertTrue(error.isDisplayed(), "Error message should be displayed");
+        assertTrue(error.isDisplayed());
 
     }
 
@@ -55,8 +55,8 @@ public class LoginTest extends BaseTest {
         ));
 
         String expectedMessage = "Email adresa ili lozinka su neispravni.";
-        assertTrue(alert.isDisplayed(), "Error alert should be displayed");
-        assertTrue(alert.getText().contains(expectedMessage), "Alert message should match expected text");
+        assertTrue(alert.isDisplayed());
+        assertTrue(alert.getText().contains(expectedMessage));
     }
 
     @Test
@@ -76,14 +76,14 @@ public class LoginTest extends BaseTest {
         ));
 
         String expectedMessage = "Email adresa ili lozinka su neispravni.";
-        assertTrue(alert.isDisplayed(), "Error alert should be displayed");
-        assertTrue(alert.getText().contains(expectedMessage), "Alert message should match expected text");
+        assertTrue(alert.isDisplayed());
+        assertTrue(alert.getText().contains(expectedMessage));
     }
 
     @Test
     public void testForgotPasswordLink() {
         WebElement forgotLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(".js-password-forgotten")));
-        assertTrue(forgotLink.isDisplayed(), "Forgotten password link should be displayed");
+        assertTrue(forgotLink.isDisplayed());
 
         forgotLink.click();
 
@@ -92,6 +92,6 @@ public class LoginTest extends BaseTest {
                 By.cssSelector("#cboxLoadedContent")
         ));
 
-        assertTrue(modal.isDisplayed(), "Forgotten password modal should be displayed");
+        assertTrue(modal.isDisplayed());
     }
 }

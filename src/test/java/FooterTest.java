@@ -5,9 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
-
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class FooterTest extends BaseTest {
@@ -78,7 +76,6 @@ public class FooterTest extends BaseTest {
         waiter.until(ExpectedConditions.urlContains("/bs/Ko-je-Kupko"));
         assertTrue(driver.getCurrentUrl().contains("/bs/Ko-je-Kupko"));
     }
-
 
     @Test
     public void testNagrade() {
@@ -209,6 +206,4 @@ public class FooterTest extends BaseTest {
         waiter.until(ExpectedConditions.urlContains("/bs/Kontakt"));
         assertTrue(driver.getCurrentUrl().contains("/bs/Kontakt"));
     }
-
-
 }

@@ -80,5 +80,32 @@ public class SearchTest extends BaseTest {
                 By.cssSelector(".no-results, .alert-info, .product__no-results")));
         assertTrue(noResultsMsg.isDisplayed());
     }
+
+    @Test
+    public void testSearchResultsContainQuery() {
+        String query = "laptop";
+
+        WebElement searchInput = driver.findElement(By.id("js-site-search-input"));
+        WebElement searchButton = driver.findElement(By.cssSelector("button.js_search_button"));
+
+        searchInput.sendKeys(query);
+        new WebDriverWait(driver, Duration.ofSeconds(5))
+                .until(ExpectedConditions.elementToBeClickable(searchButton));
+        searchButton.click();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".product-item")));
+
+        java.util.List<WebElement> productTitles = driver.findElements(By.cssSelector(".product-item .name"));
+
+        assertTrue(!productTitles.isEmpty(), "no product with this title");
+
+        boolean containsQuery = productTitles.stream()
+                .anyMatch(el -> el.getText().toLowerCase().contains(query.toLowerCase()));
+
+        assertTrue(containsQuery);
+    }
+
+
 }
 
